@@ -1,5 +1,4 @@
 
-
 :root{
     --bodycolor: #161625;
     --secondarycolor: #1e1e30;
@@ -110,11 +109,11 @@ transform: scale(1.03);
 .firstpage{
     
     width:100%;
-    height:800px;
+    height:80vh;
     
 }
 .totalfigures{
-    margin: 18.5vh 1vw;
+    margin: 21vh 1vw;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -346,16 +345,16 @@ text-align: center;
 }
 .map{
     width:100vw;
-    height:220vh;
+    height:230vh;
     display:flex;
     flex-direction: column;
 }
 .mapfile{
     position: absolute;
-    right: 5vw;
-    top: 140vh;
+    right: 4vw;
+    top: 118vh;
     margin:10px 10px;
-    width:35%;
+    width:40%;
     
 }
 .mapfile path{
@@ -408,11 +407,11 @@ text-align: center;
 .tablehead p{
     font-size: 2vw;
     text-align: left;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     padding: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
     background-color:var(--secondarycolor);
     border-radius: 10px;
     transition: all 0.3s;
@@ -422,13 +421,13 @@ text-align: center;
     
     font-size: 1.2vw;
     margin-top: 10px;
-    margin-left: 17px;
-    margin-right: 17px;
-    padding: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 7px;
+    padding-left: 17px;
+    padding-right: 17px;
     background-color:var(--secondarycolor);
-    border-radius: 10px;
+    border-radius: 7px;
     transition: all 0.3s;
    
 }
@@ -476,8 +475,8 @@ text-align: center;
     border-radius: 10px;
     width: 19vw;
     background-color:var(--secondarycolor);
-    top: 138.2vh;
-    right: 4.2vw;
+    top: 112.2vh;
+    right: 6.2vw;
     border: none; 
     font-size: 1.2vw;
     
@@ -501,7 +500,7 @@ text-align: center;
 }
 .precautions{
     width:100vw;
-    height:200vh;
+    height:180vh;
     color:white;
 }
 .section-heading{
