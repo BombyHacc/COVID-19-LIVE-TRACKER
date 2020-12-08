@@ -26,8 +26,8 @@ function displayStats(statevar) {
                 hoverstatename = data.statewise[i].state
                 statecode = data.statewise[i].statecode
                 if (statecode == statevar) {
-                    total_confirmedhover = data.statewise[i].confirmed
-                    total_activehover=data.statewise[i].active
+                    total_confirmedhover = nfObject.format(data.statewise[i].confirmed)
+                    total_activehover=nfObject.format(data.statewise[i].active)
                     document.getElementById("hoverheading").innerHTML = hoverstatename;
                     document.getElementById("hovercount").innerHTML = "Confirmed: " + total_confirmedhover;
                     document.getElementById("hoveractive").innerHTML = "Active: " + total_activehover;
