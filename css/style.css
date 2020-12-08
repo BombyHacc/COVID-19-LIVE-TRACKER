@@ -1,7 +1,7 @@
 
 :root{
-    --bodycolor: #161625;
-    --secondarycolor: #1e1e30;
+    --bodycolor: #c9dff8;
+    --secondarycolor: rgb(119, 156, 230);
 }
 *{
     margin:0;
@@ -58,7 +58,7 @@ font-family: 'Roboto Condensed', sans-serif;
  overflow: hidden;
 }
 .nav:hover{
-    background-color:rgb(19, 33, 60);
+    background-color:rgb(86, 126, 204);
 }
 
 .navitems{
@@ -153,7 +153,7 @@ transform: scale(1.03);
     background-color:var(--secondarycolor);
 }
 #countrydata:hover{
-    background-color:rgb(19, 33, 60);
+    background-color:rgb(86, 126, 204);
 }
 #worlddata{
     height:9vh;
@@ -173,7 +173,7 @@ transform: scale(1.03);
     background-color:var(--secondarycolor);
 }
 #worlddata:hover{
-    background-color:rgb(19, 33, 60);
+    background-color:rgb(86, 126, 204);
 }
 .cases{
     text-align: center;
@@ -231,27 +231,27 @@ transform: scale(1.03);
     font-weight: 600;
     color:#ff073a;
 text-align: center;
-background-color:rgb(255, 7, 58, 0.1);
+background-color:rgb(255, 7, 58, 0.3);
 }
 #active{
     font-size: 1vw;
     font-weight: 600;
     color: #007bff;
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color: rgba(0, 123, 255, 0.3);
 text-align: center;
 }
 #recovered{
     font-size: 1vw;
     font-weight: 600;
-color:rgb(3, 236, 3);
-background-color: rgba(159, 255, 151, 0.1);
+color:rgb(0, 184, 0);
+background-color: rgba(159, 255, 151, 0.5);
 text-align: center;
 }
 #death{
     font-size: 1vw;
     font-weight: 600;
     color:rgb(146, 145, 145);
-    background-color:rgb(146, 145, 145, 0.1);
+    background-color:rgb(146, 145, 145, 0.2);
 text-align: center;
 }
 
@@ -262,7 +262,7 @@ text-align: center;
     color:#ff073a;
 }
 #recoveredfig{
-    color:rgb(3, 236, 3);
+    color:rgb(0, 184, 0);
 }
 #deathfig{
  color:rgb(146, 145, 145);
@@ -317,27 +317,27 @@ text-align: center;
     font-weight: 600;
     color:#ff073a;
 text-align: center;
-background-color:rgb(255, 7, 58, 0.1);
+background-color:rgb(255, 7, 58, 0.3);
 }
 #active2{
     font-size: 1vw;
     font-weight: 600;
     color: #007bff;
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color: rgba(0, 123, 255, 0.3);
 text-align: center;
 }
 #recovered2{
     font-size: 1vw;
     font-weight: 600;
-color:rgb(3, 236, 3);
-background-color: rgba(159, 255, 151, 0.1);
+color:rgb(0, 184, 0);
+background-color: rgba(159, 255, 151, 0.5);
 text-align: center;
 }
 #death2{
     font-size: 1vw;
     font-weight: 600;
     color:rgb(146, 145, 145);
-    background-color:rgb(146, 145, 145, 0.1);
+    background-color:rgb(146, 145, 145, 0.2);
 text-align: center;
 }
 
@@ -348,7 +348,7 @@ text-align: center;
     color:#ff073a;
 }
 #recoveredfig2{
-    color:rgb(3, 236, 3);
+    color:rgb(0, 184, 0);
 }
 #deathfig2{
  color:rgb(146, 145, 145);
@@ -372,8 +372,8 @@ text-align: center;
 }
 .mapfile path{
     fill: rgba(0, 123, 255, 0.11);
-    stroke:rgba(0, 123, 255, 1);
-    stroke-width:0.7;
+    stroke:rgb(0, 93, 192);
+    stroke-width:0.9;
    
 }
 .mapfile :hover{
@@ -394,7 +394,7 @@ text-align: center;
     transition: all 0.3s;
 }
 .maphead:hover{
-    background-color:rgba(0, 123, 255, 0.11);
+    background-color:rgb(86, 126, 204);
 }
 #headingmap{
     color:white;
@@ -445,57 +445,54 @@ text-align: center;
    
 }
 .tablestate p:hover{
-    background-color:rgb(19, 33, 60);
+    background-color:rgb(255, 255, 255);
+    color:#405377;
 }
 .tablehead p:hover{
-    background-color:rgb(19, 33, 60);
+    background-color:rgb(252, 252, 252);
+    
 }
-
-#mahaactive:hover{
-    content: "hello";
-    background-color: black;
-}
-
 .tableconf{
     
     color:#ff073a;
 }
 
 .tableactive{
-    color: #007bff;
+    color: #0068d6;
 }
 .tablerecovered{
-    color:rgb(3, 236, 3);
+    color:rgb(0, 255, 0);
 }
 .tabledeath{
-    color:rgb(146, 145, 145);
+    color:rgb(92, 92, 92);
 }
 .tablestates{
     
-    color: rgb(226, 214, 43);
+    color: rgb(255, 238, 0);
 }
 
 /* BOXES CSS */
 
 .hoverbox{
-    visibility: hidden;
+    
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    height: 21vh;
+    height: 30vh;
     border-radius: 10px;
     width: 19vw;
     background-color:var(--secondarycolor);
-    top: 120.2vh;
-    right: 6.2vw;
+    top: 0;
+    right: 0;
     border: none; 
     font-size: 1.2vw;
     
 }
 
 #hoverheading{
+    
     font-weight: 600;
     padding: 0.5vw;
     color: rgb(226, 214, 43);
@@ -509,6 +506,17 @@ text-align: center;
     font-weight: lighter;
     padding: 0.2vw;
     color: #007bff;
+
+}
+#hoverrecovered{
+    font-weight: lighter;
+    padding: 0.2vw;
+    color:rgb(0, 255, 0);
+}
+#hoverdeath{
+    font-weight: lighter;
+    padding: 0.2vw;
+    color:rgb(92, 92, 92);
 
 }
 .precautions{
@@ -532,17 +540,17 @@ text-align: center;
     transition: all 0.3s;
 }
 .section-heading:hover{
-    background-color:rgba(8, 117, 233, 0.11);
+    background-color:rgb(86, 126, 204);
 }
 .section-data{
     font-size: 1.1vw;
     padding:2vh 2vh;
     margin: 2vh 2vh;
-    color:white;
+    color:#405377;
     
 }
 .anchor{
-    color: white;
+    color:#33425f;
 }
 .india{
     display: flex;
@@ -579,10 +587,10 @@ text-align: center;
     font-weight: lighter;
 }
 #aboutus:hover{
-    background-color:rgba(0, 123, 255, 0.11);
+    background-color:rgb(86, 126, 204);
 }
 .Aboutus{
-    color:white;
+    color:#405377;
     text-align: center;
     font-size: 1.5vw;
     

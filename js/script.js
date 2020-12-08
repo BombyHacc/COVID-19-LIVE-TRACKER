@@ -1,40 +1,6 @@
-
-function displayName(stateid) {
-
-    document.getElementById("statebox").style.visibility = "visible"
-    displayStats(stateid)
-
-}
 function stopDisplay() {
 
-    document.getElementById("statebox").style.visibility = "hidden"
-}
-function displayStats(statevar) {
-
-    $(document).ready(function () {
-        var url = "https://api.covid19india.org/data.json"
-
-        $.getJSON(url, function (data) {
-            console.log(data)
-            var statecode;
-            var total_confirmedhover;
-            var total_activehover;
-            var hoverstatename;
-            var i;
-            for (i = 1; i < data.statewise.length; i++) {
-
-                hoverstatename = data.statewise[i].state
-                statecode = data.statewise[i].statecode
-                if (statecode == statevar) {
-                    total_confirmedhover = nfObject.format(data.statewise[i].confirmed)
-                    total_activehover=nfObject.format(data.statewise[i].active)
-                    document.getElementById("hoverheading").innerHTML = hoverstatename;
-                    document.getElementById("hovercount").innerHTML = "Confirmed: " + total_confirmedhover;
-                    document.getElementById("hoveractive").innerHTML = "Active: " + total_activehover;
-                }
-            }
-        })
-    })
+    document.getElementById("statebox").style.display = "none"
 }
 $(document).ready(function () {
     var url = "https://api.covid19india.org/data.json"
@@ -123,3 +89,47 @@ $(document).ready(function () {
         
         })
 })
+function displayName(stateid) {
+
+    document.getElementById("statebox").style.display = "flex"
+    $(document).mousemove(function(e) {
+        $('#statebox').css('top',e.pageY-$('#statebox').height()-30);
+        $('#statebox').css('left',e.pageX-($('#statebox').width())/2);
+        
+    })
+
+    $(document).ready(function () {
+        var url = "https://api.covid19india.org/data.json"
+
+   
+        $.getJSON(url, function (data) {
+            console.log(data)
+            var statecode;
+            var total_confirmedhover;
+            var total_activehover;
+            var total_recoveredhover;
+            var total_deathhover;
+            var hoverstatename;
+            var i;
+            for (i = 1; i < data.statewise.length; i++) {
+
+                hoverstatename = data.statewise[i].state
+                statecode = data.statewise[i].statecode
+                if (statecode == stateid) {
+                    total_confirmedhover = nfObject.format(data.statewise[i].confirmed)
+                    total_activehover=nfObject.format(data.statewise[i].active)
+                    total_recoveredhover = nfObject.format(data.statewise[i].recovered)
+                    total_deathhover=nfObject.format(data.statewise[i].deaths)
+                    document.getElementById("hoverheading").innerHTML = hoverstatename;
+                    document.getElementById("hovercount").innerHTML = "Confirmed: " + total_confirmedhover;
+                    document.getElementById("hoveractive").innerHTML = "Active: " + total_activehover;
+                    document.getElementById("hoverrecovered").innerHTML = "Recovered: " + total_recoveredhover;
+                    document.getElementById("hoverdeath").innerHTML = "Death: " + total_deathhover;
+                }
+            }
+        })
+    })
+    
+
+
+}
