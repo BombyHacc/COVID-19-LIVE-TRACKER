@@ -21,6 +21,7 @@
 
 }
 .hoverbox{
+    
     visibility: hidden;
     display:flex;
     flex-direction: column;
@@ -31,8 +32,8 @@
     border-radius: 10px;
     width: 19vw;
     background-color:var(--secondarycolor);
-    top: 125vh;
-    right: 5.2vw;
+    top:0;
+    right: 0;
     border: none; 
     font-size: 1.2vw;
 

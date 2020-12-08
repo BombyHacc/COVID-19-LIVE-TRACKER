@@ -50,7 +50,7 @@ font-family: 'Roboto Condensed', sans-serif;
     position: fixed;
     height:9vh;
     top:0px;
-    width:100%;
+    width:100vw;
     color:white;
     background-color:var(--secondarycolor);
    z-index:2;
@@ -475,7 +475,8 @@ text-align: center;
 
 .hoverbox{
     
-    display:none;
+    display:flex;
+    visibility: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
