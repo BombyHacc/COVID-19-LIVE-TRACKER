@@ -115,7 +115,7 @@ font-family: 'Roboto Condensed', sans-serif;
 transform: scale(1.03);
 }
 .twitter-timeline{
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 /* MAIN PAGE */
@@ -488,7 +488,7 @@ text-align: center;
     border-radius: 10px;
     width: 19vw;
     background-color:var(--secondarycolor);
-    top: 112.2vh;
+    top: 120.2vh;
     right: 6.2vw;
     border: none; 
     font-size: 1.2vw;
