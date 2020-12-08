@@ -92,7 +92,7 @@ $(document).ready(function () {
 function displayName(stateid) {
 
     document.getElementById("statebox").style.display = "flex"
-    $(document).mousemove(function(e) {
+    $(document).mouseover(function(e) {
         $('#statebox').css('top',e.pageY-$('#statebox').height()-30);
         $('#statebox').css('left',e.pageX-($('#statebox').width())/2);
         
