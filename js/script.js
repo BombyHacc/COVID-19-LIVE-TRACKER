@@ -42,7 +42,7 @@ function displayStats(statevar) {
                     document.getElementById("hovercount").innerHTML = "Confirmed: " + total_confirmedhover;
                     document.getElementById("hoveractive").innerHTML = "Active: " + total_activehover;
                     document.getElementById("hoverrecovered").innerHTML = "Recovered: " + total_recoveredhover;
-                    document.getElementById("hoverdeath").innerHTML = "Death: " + total_deathhover;
+                    document.getElementById("hoverdeath").innerHTML = "Deceased: " + total_deathhover;
                 }
             }
         })
