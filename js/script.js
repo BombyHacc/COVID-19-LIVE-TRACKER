@@ -1,24 +1,8 @@
-function displayName(stateid) {
-    
-    document.getElementById("statebox").style.visibility = "visible"
-    $(document).mousemove(function(e) {
-        $('#statebox').css('top',e.pageY-$('#statebox').height()-30);
-        $('#statebox').css('left',e.pageX-($('#statebox').width())/2);
-        
-    })
-   
-    displayStats(stateid)
-
-}
-function stopDisplay() {
-
-    document.getElementById("statebox").style.visibility = "hidden"
-}
 function displayStats(statevar) {
-
+    
     $(document).ready(function () {
         var url = "https://api.covid19india.org/data.json"
-
+        
         $.getJSON(url, function (data) {
             console.log(data)
             console.log(data)
@@ -47,6 +31,22 @@ function displayStats(statevar) {
             }
         })
     })
+}
+function displayName(stateid) {
+    
+    document.getElementById("statebox").style.visibility = "visible"
+    $(document).mousemove(function(e) {
+        $('#statebox').css('top',e.pageY-$('#statebox').height()-30);
+        $('#statebox').css('left',e.pageX-($('#statebox').width())/2);
+        
+    })
+   
+    displayStats(stateid)
+
+}
+function stopDisplay() {
+
+    document.getElementById("statebox").style.visibility = "hidden"
 }
 $(document).ready(function () {
     var url = "https://api.covid19india.org/data.json"
