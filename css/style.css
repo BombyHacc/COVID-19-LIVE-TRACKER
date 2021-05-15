@@ -34,6 +34,13 @@ font-family: 'Roboto Condensed', sans-serif;
    text-align: center;
     
 }
+#mainheading2 a{
+    text-decoration: none;
+    color: white;
+}
+#mainheading2 a:active{
+    color: white;
+}
 #mainheading2{
     position: absolute;
     right:1vw;
@@ -364,9 +371,9 @@ text-align: center;
 }
 .mapfile{
     position: absolute;
-    right: 4vw;
+    right: 1vw;
     top: 125vh;
-    margin:10px 10px;
+    margin: 1vw 1vw;
     width:40%;
     
 }
@@ -407,7 +414,7 @@ text-align: center;
 
 .stattable{
     color: white;
-    
+   
    
 }
 .tablehead{
@@ -419,7 +426,7 @@ text-align: center;
 }
 .tablehead p{
     font-size: 2vw;
-    text-align: left;
+    text-align: center;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
     padding: 7px;
@@ -428,10 +435,10 @@ text-align: center;
     background-color:var(--secondarycolor);
     border-radius: 10px;
     transition: all 0.3s;
+    
    
 }
 .tablestate p{
-    
     font-size: 1.2vw;
     margin-top: 10px;
     margin-left: 0.5vw;
